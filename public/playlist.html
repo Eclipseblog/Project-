@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Spotify</title>
+</head>
+<body class="app">
+    <header class="header">
+        <div class="header__buttons">
+            <button type="button" class="header__button circle-button" onclick="history.back();" id="">
+                <img src="./assets/icons/arrow_left.svg" alt="">
+            </button>
+            <button type="button" class="header__button circle-button" onclick="history.forward();">
+                <img src="./assets/icons/arrow_right.svg" alt="">
+            </button>
+        </div>
+        <div class="account">
+            <img src="./assets/icons/user.svg" alt="" class="account__img">
+            <span class="account__name">user</span>
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="./index.html" class="menu__banner img-ref">
+            <img src="./assets/images/logo.png" alt="" class="menu__logo">
+        </a>
+        <ul class="menu__section">
+            <li class="menu__tag tag">
+                <a href="./index.html" class="tag__body">
+                    <div class="tag__icon tag__icon_n">
+                        <img src="./assets/icons/home.svg" alt=""">
+                    </div>
+                    <span class="tag__content">Главная</span>
+                </a>                
+            </li>
+            <li class="menu__tag tag">
+                <a href="./media.html" class="tag__body">
+                    <div class="tag__icon tag__icon_n">
+                        <img src="./assets/icons/media.svg" alt=""">
+                    </div>
+                    <span class="tag__content"> Моя медиатека</span>
+                </a>                
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <div class="main__body">
+            <section class="tracks-section section">
+                <div class="tracks-section__header tracks-header">
+                    <div class="tracks-header__img">
+                        <img src="./assets/images/placeholder.jpg" alt="">
+                    </div>
+                    <div class="tracks-header__content">
+                        <div class="tracks-header__type">
+                            плейлист
+                        </div>
+                        <div class="tracks-header__title">
+                            HATTORI
+                        </div>
+                        <div class="tracks-header__about">
+                            <div class="tracks-header__autor">
+                                User
+                            </div>
+                            <div class="tracks-header__total-tracks">
+                                5 треков
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tracks-header__controls">
+                        <button class="tracks-header__play play-button">
+                            <img src="./assets/icons/play.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="tracks-section__body tracks-body">
+                    <div class="tracks-body__header tracks-row">
+                        <div class="tracks-body__track-leading tracks-row__column">
+                            <span class="tracks-secondary-content">#</span>
+                        </div>
+                        <div class="tracks-body__track-name tracks-row__column">
+                            <span class="tracks-secondary-content">Название</span>
+                        </div>
+                        <div class="tracks-body__track-album tracks-row__column">
+                            <span class="tracks-secondary-content">Альбом</span>
+                        </div>
+                        <div class="tracks-body__track-duration tracks-row__column">
+                            <img src="./assets/icons/clock.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="tracks-body__content">
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-row__column">
+                                <span class="tracks-secondary-content">1</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">
+                                    HATTORI
+                                </a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>         
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">2</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>        
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">3</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>     
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">4</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>     
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">5</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>        
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">6</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>  
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">7</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>  
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">8</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>  
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">9</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>  
+                        <article class="tracks-track tracks-row">
+                            <div class="tracks-track__leading tracks-track__leading_h tracks-row__column">
+                                <span class="tracks-secondary-content">10</span>
+                            </div>
+                            <div class="tracks-track__info medium-track-info tracks-row__column">
+                                <div class="medium-track-info__img">
+                                    <img src="./assets/images/placeholder.jpg" alt="">
+                                </div>
+                                <div class="medium-track-info__content">
+                                    <div class="medium-track-info__title">
+                                        Название скоро узнаем
+                                    </div>
+                                    <div class="medium-track-info__subtitle tracks-secondary-content">
+                                        MiyaGi & Andy Panda
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracks-track__album tracks-row__column">
+                                <a href="./playlist.html" class="tracks-secondary-content content-ref">HATTORI</a>                                
+                            </div>
+                            <div class="tracks-track__duration tracks-row__column">
+                                <span class="tracks-secondary-content">3:32</span>                                
+                            </div>
+                        </article>  
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="player">
+            <div class="player__track small-track-info">
+                <div class="small-track-info__img">
+                    <img src="./assets/images/placeholder.jpg" alt="">
+                </div>
+                <div class="small-track-info__content">
+                    <div class="small-track-info__title">
+                        Название скоро узнаем
+                    </div>
+                    <div class="small-track-info__subtitle">
+                        MiyaGi & Andy Panda
+                    </div>
+                </div>
+                
+            </div>
+            <div class="player__controls">
+                <div class="player__buttons">
+                    <button type="button" class="player__button">
+                        <img src="./assets/icons/backward.svg" alt="">
+                    </button>
+                    <button type="button" class="player__button play-button">
+                        <img src="./assets/icons/play.svg" alt="">
+                    </button>
+                    <button type="button" class="player__button">
+                        <img src="./assets/icons/forward.svg" alt="">
+                    </button>
+                </div>
+                <div class="player__progress progress">
+                    <div class="progress__time">1:13</div>
+                    <div class="progress__bar progress-bar">
+                    </div>
+                    <div class="progress__time">3:32</div>
+                </div>
+            </div>
+            <div class="player__volume">
+                <button class="player__volume-button player__button">
+                    <img src="./assets/icons/volume.svg" alt="">
+                </button>
+                <div class="player__volume-bar progress-bar">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
